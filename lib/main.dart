@@ -36,31 +36,53 @@ class MyProject extends StatelessWidget {
           IconButton(onPressed: null, icon: const Icon(Icons.search, size: 33)),
         ],
       ),
-      
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: const Color.fromARGB(255, 63, 164, 240),
+        //backgroundColor: const Color.fromARGB(255, 63, 164, 240),
         child: const Icon(Icons.add, size: 40),
       ),
-      
-      body: Center(
+
+      body: Container(
+        //color: const Color.fromARGB(255, 252, 220, 210),
+        margin: const EdgeInsets.all(55),
+                 //EdgeInsets.fromLTRB(22, 22, 15, 17),
+
+        padding: //EdgeInsets.fromLTRB(22, 5, 3, 6),
+                EdgeInsets.all(11),
+
+        height: 280,
+        width: 280,
+
+        alignment: Alignment.center,
+
+        //transform: Matrix4.rotationZ(.02),
+        decoration: BoxDecoration(
+          //borderRadius: BorderRadius.circular(60),
+          shape: BoxShape.circle,
+          /*
+           shape
+           borderRadius
+            لو عملت الاتنين في نفس الوقت هيديك ايرور  
+          */
+          
+          color: const Color.fromARGB(255, 212, 188, 188),
+          // border: Border.all(
+          //   color: const Color.fromARGB(255, 63, 164, 240),
+          //   width: 10,
+          // ),
+        ),
         child: const Text(
-          "Hello Ahmed Khaled",
+          "Ahmed Khaled",
           style: TextStyle(
-            fontSize: 30,
+            fontSize: 25,
             color: Color.fromARGB(255, 63, 164, 240),
             fontWeight: FontWeight.bold,
-            backgroundColor: Color.fromARGB(255, 0, 0, 0),
             fontFamily: "Cairo",
             letterSpacing: 4,
             wordSpacing: 2,
             height: 1.5,
           ),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          textAlign: TextAlign.left,
-          textDirection: TextDirection.ltr, // ده تستفاد منه لو عايز تكتب عربي
-          
         ),
       ),
     );
