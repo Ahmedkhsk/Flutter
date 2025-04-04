@@ -44,40 +44,22 @@ class MyProject extends StatelessWidget {
       ),
 
       body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          //mainAxisAlignment: MainAxisAlignment.start,
-          // mainAxisSize: MainAxisSize.max,
-          // crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
           children: [
+            
             Container(
-              //color: const Color.fromARGB(255, 252, 220, 210),
-              margin: const EdgeInsets.all(55),
-
-              //EdgeInsets.fromLTRB(22, 22, 15, 17),
-              padding: //EdgeInsets.fromLTRB(22, 5, 3, 6),
-                  EdgeInsets.all(11),
-
+              margin: const EdgeInsets.only(
+                top: 20,
+                bottom: 20,
+                left: 20,
+                right: 20,
+              ),
               height: 280,
               width: 280,
-
               alignment: Alignment.center,
-
-              //transform: Matrix4.rotationZ(.02),
               decoration: BoxDecoration(
-                //borderRadius: BorderRadius.circular(60),
-                shape: BoxShape.circle,
-
-                /*
-           shape
-           borderRadius
-            لو عملت الاتنين في نفس الوقت هيديك ايرور  
-          */
+                shape: BoxShape.rectangle,
                 color: const Color.fromARGB(255, 212, 188, 188),
-                // border: Border.all(
-                //   color: const Color.fromARGB(255, 63, 164, 240),
-                //   width: 10,
-                // ),
               ),
               child: const Text(
                 "Ahmed Khaled",
@@ -93,22 +75,184 @@ class MyProject extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(width: 200),
-
-            Text(
-              "Shawky",
-              style: TextStyle(
-                backgroundColor: Colors.tealAccent,
-                fontSize: 22,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                 
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 20,
+                      bottom: 20,
+                      left: 20,
+                      right: 20,
+                    ),
+                    height: 100,
+                    width: 100,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: const Color.fromARGB(255, 212, 188, 188),
+                    ),
+                    child: const Text(
+                      "Ahmed",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 63, 164, 240),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Cairo",
+                        letterSpacing: 4,
+                        wordSpacing: 2,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+                  
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 20,
+                      bottom: 20,
+                      left: 20,
+                      right: 20,
+                    ),
+                    height: 100,
+                    width: 100,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: const Color.fromARGB(255, 212, 188, 188),
+                    ),
+                    child: const Text(
+                      "Khaled",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 63, 164, 240),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Cairo",
+                        letterSpacing: 4,
+                        wordSpacing: 2,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+                  
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 20,
+                      bottom: 20,
+                      left: 20,
+                      right: 20,
+                    ),
+                    height: 100,
+                    width: 100,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: const Color.fromARGB(255, 212, 188, 188),
+                    ),
+                    child: const Text(
+                      "Shawky",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 63, 164, 240),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Cairo",
+                        letterSpacing: 4,
+                        wordSpacing: 2,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+           
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 20,
+                      bottom: 20,
+                      left: 20,
+                      right: 20,
+                    ),
+                    height: 100,
+                    width: 100,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: const Color.fromARGB(255, 212, 188, 188),
+                    ),
+                    child: const Text(
+                      "Hassan",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 63, 164, 240),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Cairo",
+                        letterSpacing: 4,
+                        wordSpacing: 2,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+                
+                ],
               ),
             ),
 
-            const SizedBox(width: 200),
-
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.favorite, color: Colors.red, size: 99),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 20,
+                bottom: 20,
+                left: 20,
+                right: 20,
+              ),
+              height: 280,
+              width: 280,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: const Color.fromARGB(255, 212, 188, 188),
+              ),
+              child: const Text(
+                "Ahmed Khaled",
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Color.fromARGB(255, 63, 164, 240),
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Cairo",
+                  letterSpacing: 4,
+                  wordSpacing: 2,
+                  height: 1.5,
+                ),
+              ),
             ),
+
+            Container(
+              margin: const EdgeInsets.only(
+                top: 20,
+                bottom: 20,
+                left: 20,
+                right: 20,
+              ),
+              height: 280,
+              width: 280,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: const Color.fromARGB(255, 212, 188, 188),
+              ),
+              child: const Text(
+                "Ahmed Khaled",
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Color.fromARGB(255, 63, 164, 240),
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Cairo",
+                  letterSpacing: 4,
+                  wordSpacing: 2,
+                  height: 1.5,
+                ),
+              ),
+            ),
+          
           ],
         ),
       ),
