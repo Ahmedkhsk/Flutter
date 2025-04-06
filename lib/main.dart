@@ -39,43 +39,110 @@ class MyProject extends StatelessWidget {
 
       body: Center(
         child: Container(
-          padding: const EdgeInsets.all(10),
           color: Colors.blueGrey,
           width: 300,
           height: 300,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
+
+          child: Stack(
+
             children: [
-              Container(
-                alignment: Alignment.center,
-                color: Colors.green[300],
-                width: 100,
-                height: 100,
-                child: Text(
-                  "Ahmed",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                color: Colors.amber[300],
-                width: 100,
-                height: 100,
-                child: Text(
-                  "Khaled",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+            
+              Positioned(
+                top: 9,
+                left: 9,
+                child: Container(
+                  alignment: Alignment.center,
+                  color: Colors.green[300],
+                  width: 100,
+                  height: 100,
+                  child: Text(
+                    "Ahmed",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
 
+              Positioned(
+                bottom: 9,
+                left: 9,
+                child: Container(
+                  alignment: Alignment.center,
+                  color: const Color.fromARGB(255, 84, 140, 195),
+                  width: 100,
+                  height: 100,
+                  child: Text(
+                    "Ahmed",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+    
+              Positioned(
+                right: 9,
+                bottom: 9,
+                child: Container(
+                  alignment: Alignment.center,
+                  color: const Color.fromARGB(255, 230, 180, 136),
+                  width: 100,
+                  height: 100,
+                  child: Text(
+                    "Ahmed",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+           
+              Positioned(
+                top: 9,
+                right: 9,
+                child: Container(
+                  alignment: Alignment.center,
+                  color: const Color.fromARGB(255, 2, 10, 2),
+                  width: 100,
+                  height: 100,
+                  child: Text(
+                    "Ahmed",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+        
+              Positioned(
+                top: 100,
+                right: 100,
+                
+                child: Container(
+                  alignment: Alignment.center,
+                  color: const Color.fromARGB(255, 227, 75, 204),
+                  width: 100,
+                  height: 100,
+                  child: Text(
+                    "Ahmed",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            
             ],
           ),
         ),
