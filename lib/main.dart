@@ -37,22 +37,37 @@ class MyProject extends StatelessWidget {
         ],
       ),
 
-      body: Container(
-
-        color: Colors.blueGrey,
-        width: double.infinity,
-        height: 300,
-        child: Row(
-          children: [
-            Expanded(
-              flex: 1,
-              child: Container(
+      body: Center(
+        child: Container(
+          padding: const EdgeInsets.all(10),
+          color: Colors.blueGrey,
+          width: 300,
+          height: 300,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                alignment: Alignment.center,
+                color: Colors.green[300],
+                width: 100,
+                height: 100,
+                child: Text(
+                  "Ahmed",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Container(
                 alignment: Alignment.center,
                 color: Colors.amber[300],
-                width: 122,
+                width: 100,
                 height: 100,
                 child: Text(
-                  "Ahmed",
+                  "Khaled",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -60,42 +75,9 @@ class MyProject extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                alignment: Alignment.center,
-                color: Colors.blue[300],
-                width: 122,
-                height: 100,
-                child: Text(
-                  "Ahmed",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                alignment: Alignment.center,
-                color: Colors.red[300],
-                width: 122,
-                height: 100,
-                child: Text(
-                  "Ahmed",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          ],
+
+            ],
+          ),
         ),
       ),
     );
