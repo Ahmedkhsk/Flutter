@@ -37,275 +37,68 @@ class MyProject extends StatelessWidget {
         ],
       ),
 
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-                bottom: 20,
-                left: 20,
-                right: 20,
-              ),
-              height: 280,
-              width: 280,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-                color: const Color.fromARGB(255, 212, 188, 188),
-              ),
-              child: const Text(
-                "Ahmed Khaled",
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Color.fromARGB(255, 63, 164, 240),
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "Cairo",
-                  letterSpacing: 4,
-                  wordSpacing: 2,
-                  height: 1.5,
-                ),
+      body: Column(
+        children: [
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                "assets/images/A.jpg",
+                fit: BoxFit.cover,
+                width: 250,
+                height: 150,
               ),
             ),
+          ),
+          Image.asset(
+            "assets/images/B.jpg",
+            fit: BoxFit.cover,
+            width: 250,
+            height: 150,
+          ),
 
-            Wrap(
-              alignment: WrapAlignment.spaceBetween,
-              spacing: 5,
-              runSpacing: 5,
-              children: [
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: Image.asset(
+              "assets/images/D.jpg",
+              fit: BoxFit.cover,
+              width: 250,
+              height: 150,
+            ),
+          ),
+
+          // Container(
+          //   margin: const EdgeInsets.all(10),
+          //   child: Image.network(
+          //     "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpg",
+          //     loadingBuilder:
+          //         (context, child, loadingProgress) =>
+          //             loadingProgress == null
+          //                 ? child
+          //                 : Container(
+          //                   margin: const EdgeInsets.fromLTRB(166, 160, 0, 0),
+          //                   child: const CircularProgressIndicator(),
+          //                 ),
+          //   ),
+          // ),
+          
+          CircleAvatar(
+            backgroundImage: AssetImage("assets/images/C.jpg"),
+            radius: 60,
+          ),
+
+          const SizedBox(height: 20),
+          CircleAvatar(
+            radius: 50,
+            child: ClipOval(
             
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "1",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "2",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "3",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "4",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "5",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "6",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "7",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "8",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-                 ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.orange[500]),
-                    padding: MaterialStateProperty.all(const EdgeInsets.all(5)),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "9",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Cairo",
-                      letterSpacing: 4,
-                      wordSpacing: 2,
-                      height: 1.5,
-                    ),
-                  ),
-                ),
-              
-              ],
-            ),
-
-            Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-                bottom: 20,
-                left: 20,
-                right: 20,
-              ),
-              height: 280,
-              width: 280,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-                color: const Color.fromARGB(255, 212, 188, 188),
-              ),
-              child: const Text(
-                "Ahmed Khaled",
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Color.fromARGB(255, 63, 164, 240),
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "Cairo",
-                  letterSpacing: 4,
-                  wordSpacing: 2,
-                  height: 1.5,
-                ),
+              child: Image.asset(
+                "assets/images/A.jpg",
               ),
             ),
-
-            Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-                bottom: 20,
-                left: 20,
-                right: 20,
-              ),
-              height: 280,
-              width: 280,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-                color: const Color.fromARGB(255, 212, 188, 188),
-              ),
-              child: const Text(
-                "Ahmed Khaled",
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Color.fromARGB(255, 63, 164, 240),
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "Cairo",
-                  letterSpacing: 4,
-                  wordSpacing: 2,
-                  height: 1.5,
-                ),
-              ),
-            ),
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
