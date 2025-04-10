@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,65 +40,15 @@ class MyProject extends StatelessWidget {
 
       body: Column(
         children: [
-          Container(
-            margin: const EdgeInsets.all(10),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: Image.asset(
-                "assets/images/A.jpg",
-                fit: BoxFit.cover,
-                width: 250,
-                height: 150,
-              ),
+          SvgPicture.asset(
+            colorFilter: const ColorFilter.mode(
+              Colors.blue,
+              BlendMode.srcIn,
             ),
+            'assets/images/icons8-facebook-logo.svg',
+            width: 50,
+            height: 50,
           ),
-          Image.asset(
-            "assets/images/B.jpg",
-            fit: BoxFit.cover,
-            width: 250,
-            height: 150,
-          ),
-
-          Container(
-            margin: const EdgeInsets.all(10),
-            child: Image.asset(
-              "assets/images/D.jpg",
-              fit: BoxFit.cover,
-              width: 250,
-              height: 150,
-            ),
-          ),
-
-          // Container(
-          //   margin: const EdgeInsets.all(10),
-          //   child: Image.network(
-          //     "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpg",
-          //     loadingBuilder:
-          //         (context, child, loadingProgress) =>
-          //             loadingProgress == null
-          //                 ? child
-          //                 : Container(
-          //                   margin: const EdgeInsets.fromLTRB(166, 160, 0, 0),
-          //                   child: const CircularProgressIndicator(),
-          //                 ),
-          //   ),
-          // ),
-          
-          CircleAvatar(
-            backgroundImage: AssetImage("assets/images/C.jpg"),
-            radius: 60,
-          ),
-
-          const SizedBox(height: 20),
-          CircleAvatar(
-            radius: 50,
-            child: ClipOval(
-            
-              child: Image.asset(
-                "assets/images/A.jpg",
-              ),
-            ),
-          )
         ],
       ),
     );
