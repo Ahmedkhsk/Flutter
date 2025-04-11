@@ -42,27 +42,84 @@ class MyProject extends StatelessWidget {
           ],
         ),
 
-        body: Column(
-          children: [
-            TextField(
-              //obscureText: false,
-              //keyboardType: TextInputType.number,
-              //textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
-                //hintText: "Email",
-                labelText: "Email",
-                labelStyle: const TextStyle(color: Colors.blue, fontSize: 20),
-                // border: OutlineInputBorder(
-                //   borderRadius: BorderRadius.circular(20),
-                //   borderSide: const BorderSide(color: Colors.blue, width: 2),
-                // ),
-                //border: InputBorder.none,
-                icon: const Icon(Icons.email, color: Colors.blue),
-                prefixIcon: const Icon(Icons.email, color: Colors.blue),
-                suffixIcon: const Icon(Icons.visibility, color: Colors.blue),
+        body: SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+
+            children: [
+              Container(
+                padding: const EdgeInsets.all(3),
+                decoration: BoxDecoration(
+                  color: Colors.purple[100],
+                  borderRadius: BorderRadius.circular(66),
+                ),
+                margin: const EdgeInsets.all(10),
+                width: 250,
+
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "your Email:",
+                    prefixIcon: const Icon(
+                      Icons.person,
+                      color: Color.fromARGB(255, 109, 30, 105),
+                    ),
+                    border: InputBorder.none,
+                  ),
+                ),
               ),
-            ),
-          ],
+
+              Container(
+                padding: const EdgeInsets.all(3),
+                decoration: BoxDecoration(
+                  color: Colors.purple[100],
+                  borderRadius: BorderRadius.circular(60),
+                ),
+                margin: const EdgeInsets.all(10),
+                width: 250,
+
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    hintText: "Password:",
+                    prefixIcon: const Icon(
+                      Icons.lock,
+                      color: Color.fromARGB(255, 109, 30, 105),
+                    ),
+                    suffixIcon: const Icon(
+                      Icons.visibility,
+                      color: Color.fromARGB(255, 109, 30, 105),
+                    ),
+                    border: InputBorder.none,
+                  ),
+                ),
+              ),
+
+              Container(
+                width: 250,
+                margin: const EdgeInsets.all(10),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    elevation: 3,
+                    backgroundColor: const Color.fromARGB(255, 109, 30, 105),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 50,
+                      vertical: 20,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                  ),
+                  child: const Text(
+                    "Login",
+                    style: TextStyle(fontSize: 15, color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
