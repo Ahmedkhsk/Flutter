@@ -76,6 +76,31 @@ class Welcome extends StatelessWidget {
                 ),
               ),
             ),
+                    
+            Container(
+              width: 250,
+              margin: const EdgeInsets.all(10),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/hive');
+                },
+                style: ElevatedButton.styleFrom(
+                  elevation: 3,
+                  backgroundColor: Colors.purple,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 50,
+                    vertical: 20,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(66),
+                  ),
+                ),
+                child: const Text(
+                  "Hive",
+                  style: TextStyle(fontSize: 15, color: Colors.white),
+                ),
+              ),
+            ),
           
           ],
         ),
